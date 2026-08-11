@@ -1,0 +1,2 @@
+import { PageContainer } from "@/components/shared/page-container"
+export default function ProductsPage() { return <section className="min-h-[70vh] py-[var(--section-space)]"><PageContainer><h1 className="heading-1">Sản phẩm</h1><p className="body-lg mt-6 max-w-xl text-muted-foreground">Khám phá những sản phẩm được Hubi Việt Nam tuyển chọn cho hành trình trên mặt nước.</p></PageContainer></section> }
