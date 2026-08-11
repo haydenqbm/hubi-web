@@ -4,7 +4,7 @@ Updated: 2026-08-11
 
 ## Status
 
-Batch 1 complete. Design and implementation plan remain approved for execution style: three large coherent batches with checkpoint verification only.
+Batch 1 complete, including a post-batch source correction. Design and implementation plan remain approved for execution style: three large coherent batches with checkpoint verification only.
 
 ## Active milestone
 
@@ -78,7 +78,7 @@ Out of scope:
 
 Batch 2 — Homepage hero + typed content foundation.
 
-Batch 1 evidence: `pnpm lint` passed; `pnpm build` passed; desktop smoke returned HTTP 200 for `/`, `/san-pham`, `/blog`, and `/lien-he`; mobile navigation source sanity passed for menu boundary and close behavior.
+Batch 1 evidence: `pnpm lint` passed; `pnpm build` passed; desktop smoke returned HTTP 200 for `/`, `/san-pham`, `/blog`, and `/lien-he`; mobile navigation sanity passed; supplied 21st.dev header/footer source behavior is now integrated with Hubi content and native scrolling.
 
 ## Blockers
 
