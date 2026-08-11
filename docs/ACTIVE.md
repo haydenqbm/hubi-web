@@ -4,11 +4,11 @@ Updated: 2026-08-11
 
 ## Status
 
-Batch 1 complete, including a post-batch source correction. Design and implementation plan remain approved for execution style: three large coherent batches with checkpoint verification only.
+Batch 2 complete. Batch 1 remains complete, including its post-batch source correction. Design and implementation plan remain approved for execution style: three large coherent batches with checkpoint verification only.
 
 ## Active milestone
 
-**Batch 1 — Project Foundation + Global Shell**
+**Batch 2 — Scroll Hero + Featured Product Showcase**
 
 Build in one coherent pass:
 - Next.js App Router + TypeScript + Tailwind scaffold
@@ -76,10 +76,14 @@ Out of scope:
 
 ## Next checkpoint
 
-Batch 2 — Homepage hero + typed content foundation.
+Batch 3 — Product/Blog/Contact completion and V1 closure.
 
-Batch 1 evidence: `pnpm lint` passed; `pnpm build` passed; desktop smoke returned HTTP 200 for `/`, `/san-pham`, `/blog`, and `/lien-he`; mobile navigation sanity passed; supplied 21st.dev header/footer source behavior is now integrated with Hubi content and native scrolling.
+Batch 2 evidence: 339 source JPEGs preflighted as contiguous `00001.jpg`–`00339.jpg`, all 1920×1080; runtime derivatives generated as 339 desktop + 339 mobile WebP frames plus poster; `pnpm lint` passed; `pnpm build` passed; headless browser verified first frame, final frame request, CTA anchor, gallery routing, mobile navigation, reduced-motion rendering, and no console/page errors.
 
 ## Blockers
 
 None.
+
+## Media policy
+
+`assets-source/hero/frames/` is source/build material and is ignored by Git. Runtime WebP derivatives live under `public/hero-sequence/` and are generated with `pnpm hero:optimize`.

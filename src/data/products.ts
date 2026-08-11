@@ -1,0 +1,8 @@
+import type { Product } from "@/types/product"
+
+export const products: Product[] = [
+  { id: "hb-koi-350", slug: "hb-by-skatinger-koi-350", name: "HB by SKATINGER KOI 350", code: "HB-KOI-350", brand: "HB by SKATINGER", category: "SUP board", description: "Thiết kế giàu cá tính cho những ngày lướt nhẹ trên mặt nước.", images: [{ src: "/images/products/hb-koi-350.jpg", alt: "HB by SKATINGER KOI 350 trên nền sáng" }], specs: { "Chiều dài": "350 cm", "Dòng": "All-round" }, featured: true },
+  { id: "pic-nebula-350", slug: "pic-nebula-350", name: "PIC NEBULA 350", code: "PIC-NEBULA-350", brand: "PIC", category: "SUP board", description: "Một lựa chọn cân bằng, ổn định cho hành trình khám phá đầu tiên.", images: [{ src: "/images/products/hb-lac-hong-350.jpg", alt: "Bảng SUP dáng PIC NEBULA 350" }], specs: { "Chiều dài": "350 cm", "Dòng": "Touring" }, featured: true },
+  { id: "gq-335", slug: "gq-335", name: "GQ 335", code: "GQ-335", brand: "GQ", category: "SUP board", description: "Gọn gàng, linh hoạt và sẵn sàng cho những buổi chèo năng động.", images: [{ src: "/images/products/tidetrek-summer-335.jpg", alt: "Bảng SUP GQ 335" }], specs: { "Chiều dài": "335 cm", "Dòng": "All-round" }, featured: true },
+  { id: "tidetrek-summer-335", slug: "tidetrek-summer-335", name: "TIDETREK SUMMER 335", code: "TT-SUMMER-335", brand: "TIDETREK", category: "SUP board", description: "Sắc màu mùa hè và cảm giác tự do cho mọi chuyến đi ven hồ.", images: [{ src: "/images/products/tidetrek-storm-x.jpg", alt: "TIDETREK SUMMER 335" }], specs: { "Chiều dài": "335 cm", "Dòng": "Lifestyle" }, featured: true },
+]

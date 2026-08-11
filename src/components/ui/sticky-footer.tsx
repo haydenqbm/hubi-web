@@ -8,8 +8,7 @@ type AnimatedContainerProps = React.ComponentProps<typeof motion.div> & { delay?
 
 function AnimatedContainer({ delay = 0.1, children, ...props }: AnimatedContainerProps) {
   const shouldReduceMotion = useReducedMotion()
-  if (shouldReduceMotion) return <>{children}</>
-  return <motion.div initial={{ filter: "blur(4px)", translateY: -8, opacity: 0 }} whileInView={{ filter: "blur(0px)", translateY: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay, duration: 0.8 }} {...props}>{children}</motion.div>
+  return <motion.div initial={shouldReduceMotion ? false : { filter: "blur(4px)", translateY: -8, opacity: 0 }} whileInView={shouldReduceMotion ? undefined : { filter: "blur(0px)", translateY: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay, duration: 0.8 }} {...props}>{children}</motion.div>
 }
 
 type FooterLink = { title: string; href: string }
