@@ -5,13 +5,15 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import * as React from "react"
 import type { ProductImage } from "@/types/product"
 
+const PRODUCT_IMAGE_VERSION = "2026-08-19-v4"
+
 export function ProductImageCarousel({ images, productName }: { images: ProductImage[]; productName: string }) {
   const [activeIndex, setActiveIndex] = React.useState(0)
   const [reducedMotion, setReducedMotion] = React.useState(false)
   const pointerStart = React.useRef<number | null>(null)
   const thumbnailRailRef = React.useRef<HTMLDivElement | null>(null)
   const thumbnailRefs = React.useRef<Array<HTMLButtonElement | null>>([])
-  const safeImages = images.length > 0 ? images : [{ src: "/images/products/tidetrek-storm-x.jpg", alt: productName }]
+  const safeImages = (images.length > 0 ? images : [{ src: "/images/products/tidetrek-storm-x.jpg", alt: productName }]).map((image) => ({ ...image, src: `${image.src}?v=${PRODUCT_IMAGE_VERSION}` }))
 
   React.useLayoutEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)")

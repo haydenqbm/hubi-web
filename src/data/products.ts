@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     "id": "gq-board-catalina",
     "slug": "gq-board-catalina",
-    "name": "GQ Board CATALINA",
+    "name": "CATALINA",
     "brand": "GQ Board",
     "category": "SUP",
     "description": "GQ Board CATALINA là mẫu SUP hơi thuộc nhóm GQ Board, nổi bật nhờ hoạ tiết được in bằng công nghệ UV sắc nét như một tác phẩm nghệ thuật. Màu nền vàng nổi bật trên mặt biển hứa hẹn tạo nên một \"siêu phẩm\" khi khách hàng chụp ảnh check-in trên mặt SUP.",
@@ -87,7 +87,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "3.250.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -96,14 +97,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "3.050.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.850.000 VND"
       }
     ],
     "warranty": {
@@ -121,12 +124,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": true
+    "featured": true,
+    "startingPrice": "2.850.000 VND"
   },
   {
     "id": "gq-board-coco",
     "slug": "gq-board-coco",
-    "name": "GQ Board COCO",
+    "name": "COCO",
     "brand": "GQ Board",
     "category": "SUP",
     "description": "GQ Board COCO là mẫu SUP hơi thuộc nhóm GQ Board, phù hợp khách mới chơi, khách mua cho gia đình và các đơn vị làm dịch vụ cho thuê SUP. Mẫu SUP này được mệnh danh là SUP \"quốc dân\" nhờ hàng ngàn những bức ảnh check-in siêu đẹp với SUP trên khắp mọi miền tổ quốc, cùng ưu điểm giá tốt, nên luôn là lựa chọn hàng đầu của người tiêu dùng.",
@@ -213,7 +217,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "2.790.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -222,14 +227,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "2.690.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.550.000 VND"
       }
     ],
     "warranty": {
@@ -247,12 +254,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": true
+    "featured": true,
+    "startingPrice": "2.550.000 VND"
   },
   {
     "id": "gq-board-dp-335",
     "slug": "gq-board-dp-335",
-    "name": "GQ Board DP 335",
+    "name": "DP 335",
     "brand": "GQ Board",
     "category": "SUP",
     "description": "GQ Board DP 335 là mẫu SUP hơi thuộc nhóm GQ Board, phù hợp khách mới chơi, khách mua cho gia đình và các đơn vị làm dịch vụ cho thuê SUP. Mẫu SUP này được mệnh danh là SUP \"quốc dân\" nhờ hàng ngàn những bức ảnh check-in siêu đẹp với SUP trên khắp mọi miền tổ quốc, cùng ưu điểm giá tốt, nên luôn là lựa chọn hàng đầu của người tiêu dùng.",
@@ -363,7 +371,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "2.790.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -372,14 +381,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "2.690.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.550.000 VND"
       }
     ],
     "warranty": {
@@ -397,12 +408,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": true
+    "featured": true,
+    "startingPrice": "2.550.000 VND"
   },
   {
     "id": "gq-board-koi-kc335",
     "slug": "gq-board-koi-kc335",
-    "name": "GQ Board KOI KC335",
+    "name": "KOI KC335",
     "brand": "GQ Board",
     "category": "SUP",
     "description": "GQ Board KOI KC335 là mẫu SUP hơi thuộc nhóm GQ Board, nổi bật nhờ hoạ tiết được in bằng công nghệ UV sắc nét như một tác phẩm nghệ thuật. Màu nền vàng nổi bật trên mặt biển hứa hẹn tạo nên một \"siêu phẩm\" khi khách hàng chụp ảnh check-in trên mặt SUP.",
@@ -477,7 +489,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "3.200.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -486,14 +499,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.800.000 VND"
       }
     ],
     "warranty": {
@@ -511,12 +526,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": true
+    "featured": true,
+    "startingPrice": "2.800.000 VND"
   },
   {
     "id": "gq-board-rd-335",
     "slug": "gq-board-rd-335",
-    "name": "GQ Board RD 335",
+    "name": "RD 335",
     "brand": "GQ Board",
     "category": "SUP",
     "description": "GQ Board RD 335 là mẫu SUP hơi thuộc nhóm GQ Board, phù hợp khách mới chơi, khách mua cho gia đình và các đơn vị làm dịch vụ cho thuê SUP. Mẫu SUP này được mệnh danh là SUP \"quốc dân\" nhờ hàng ngàn những bức ảnh check-in siêu đẹp với SUP trên khắp mọi miền tổ quốc, cùng ưu điểm giá tốt, nên luôn là lựa chọn hàng đầu của người tiêu dùng.",
@@ -607,7 +623,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "2.790.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -616,14 +633,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "2.690.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.550.000 VND"
       }
     ],
     "warranty": {
@@ -641,12 +660,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": true
+    "featured": true,
+    "startingPrice": "2.550.000 VND"
   },
   {
     "id": "gq-board-sw-335",
     "slug": "gq-board-sw-335",
-    "name": "GQ Board SW 335",
+    "name": "SW 335",
     "brand": "GQ Board",
     "category": "SUP",
     "description": "GQ Board SW 335 là mẫu SUP hơi thuộc nhóm GQ Board, phù hợp khách mới chơi, khách mua cho gia đình và các đơn vị làm dịch vụ cho thuê SUP. Mẫu SUP này được mệnh danh là SUP \"quốc dân\" nhờ hàng ngàn những bức ảnh check-in siêu đẹp với SUP trên khắp mọi miền tổ quốc, cùng ưu điểm giá tốt, nên luôn là lựa chọn hàng đầu của người tiêu dùng.",
@@ -733,7 +753,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "2.790.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -742,14 +763,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "2.690.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.550.000 VND"
       }
     ],
     "warranty": {
@@ -767,12 +790,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": true
+    "featured": true,
+    "startingPrice": "2.550.000 VND"
   },
   {
     "id": "hb-board-dragon",
     "slug": "hb-board-dragon",
-    "name": "HB Board DRAGON",
+    "name": "DRAGON",
     "brand": "HB Board",
     "category": "SUP",
     "description": "HB Board DRAGON là mẫu SUP hơi nổi bật của HB Board, phù hợp khách cần một chiếc ván rộng, tải tốt và dễ sử dụng cho nhiều hoạt động trên mặt nước. Mẫu SUP này luôn là một trong những mẫu SUP bán chạy nhất tại thị trường Việt Nam nhờ ưu điểm vượt trội về màu sắc, kích thước, tải trọng và sự đa dụng.",
@@ -861,7 +885,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "3.400.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -870,14 +895,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.950.000 VND"
       }
     ],
     "warranty": {
@@ -895,12 +922,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.950.000 VND"
   },
   {
     "id": "hb-board-koi",
     "slug": "hb-board-koi",
-    "name": "HB Board KOI",
+    "name": "KOI",
     "brand": "HB Board",
     "category": "SUP",
     "description": "HB Board KOI là mẫu SUP hơi nổi bật của HB Board, phù hợp khách cần một chiếc ván rộng, tải tốt và dễ sử dụng cho nhiều hoạt động trên mặt nước. Mẫu SUP này luôn là một trong những mẫu SUP bán chạy nhất tại thị trường Việt Nam nhờ ưu điểm vượt trội về màu sắc, kích thước, tải trọng và sự đa dụng.",
@@ -981,7 +1009,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "3.400.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -990,14 +1019,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.950.000 VND"
       }
     ],
     "warranty": {
@@ -1015,12 +1046,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.950.000 VND"
   },
   {
     "id": "hb-board-lac-hong",
     "slug": "hb-board-lac-hong",
-    "name": "HB Board LAC HONG",
+    "name": "LAC HONG",
     "brand": "HB Board",
     "category": "SUP",
     "description": "HB Board LAC HONG là mẫu SUP hơi của HB Board, phù hợp khách mới chơi, gia đình hoặc đơn vị dịch vụ cần một mẫu ván ổn định, dễ làm quen và dễ sử dụng. Thiết kế hướng đến cảm giác chắc chắn, thân thiện với người dùng và phù hợp cho các hoạt động chèo thư giãn, chụp ảnh, picnic hoặc trải nghiệm ngoài trời.",
@@ -1096,7 +1128,8 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động"
-        ]
+        ],
+        "price": "2.990.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1105,14 +1138,16 @@ export const products: Product[] = [
           "01 ván SUP",
           "Mái chèo",
           "1 vây"
-        ]
+        ],
+        "price": "2.850.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.650.000 VND"
       }
     ],
     "warranty": {
@@ -1130,13 +1165,14 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.650.000 VND"
   },
   {
     "id": "pic-board-nebula-pink",
     "slug": "pic-board-nebula-pink",
-    "name": "Pic Board Nebula Pink",
-    "brand": "Picboard",
+    "name": "Nebula Pink",
+    "brand": "Pic Board",
     "category": "SUP",
     "description": "Pic Board Nebula Pink là mẫu SUP hơi thuộc nhóm Nebula của Pic Board, nổi bật nhờ phối màu giàu hiệu ứng thị giác và phong cách trẻ trung. Thiết kế phù hợp khách thích ván lên ảnh đẹp, dễ tạo điểm nhấn khi check-in tại hồ, bãi biển, bể bơi, resort hoặc các khu trải nghiệm ngoài trời.",
     "overview": "Pic Board Nebula Pink là mẫu SUP hơi thuộc nhóm Nebula của Pic Board, nổi bật nhờ phối màu giàu hiệu ứng thị giác và phong cách trẻ trung. Thiết kế phù hợp khách thích ván lên ảnh đẹp, dễ tạo điểm nhấn khi check-in tại hồ, bãi biển, bể bơi, resort hoặc các khu trải nghiệm ngoài trời.",
@@ -1212,8 +1248,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.500.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1221,15 +1259,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.250.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "3.050.000 VND"
       }
     ],
     "warranty": {
@@ -1247,13 +1288,14 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "3.050.000 VND"
   },
   {
     "id": "pic-board-nebula-yellow",
     "slug": "pic-board-nebula-yellow",
-    "name": "Pic Board Nebula Yellow",
-    "brand": "Picboard",
+    "name": "Nebula Yellow",
+    "brand": "Pic Board",
     "category": "SUP",
     "description": "Pic Board Nebula Yellow là mẫu SUP hơi thuộc nhóm Nebula của Pic Board, nổi bật nhờ phối màu giàu hiệu ứng thị giác và phong cách trẻ trung. Thiết kế phù hợp khách thích ván lên ảnh đẹp, dễ tạo điểm nhấn khi check-in tại hồ, bãi biển, bể bơi, resort hoặc các khu trải nghiệm ngoài trời.",
     "overview": "Pic Board Nebula Yellow là mẫu SUP hơi thuộc nhóm Nebula của Pic Board, nổi bật nhờ phối màu giàu hiệu ứng thị giác và phong cách trẻ trung. Thiết kế phù hợp khách thích ván lên ảnh đẹp, dễ tạo điểm nhấn khi check-in tại hồ, bãi biển, bể bơi, resort hoặc các khu trải nghiệm ngoài trời.",
@@ -1329,8 +1371,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.500.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1338,15 +1382,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.250.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "3.050.000 VND"
       }
     ],
     "warranty": {
@@ -1364,14 +1411,19 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "3.050.000 VND"
   },
   {
     "id": "tidetrek-glacier",
     "slug": "tidetrek-glacier",
-    "name": "Tidetrek Glacier",
+    "name": "Glacier",
     "brand": "Tidetrek",
     "category": "SUP",
+    "categories": [
+      "SUP",
+      "THUYỀN CÂU"
+    ],
     "description": "Tidetrek Glacier là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "overview": "Tidetrek Glacier là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "usage": [
@@ -1410,8 +1462,16 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Glacier — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-glacier/01.jpg",
+        "alt": "tidetrek-glacier — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-glacier/02.jpg",
+        "alt": "tidetrek-glacier — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-glacier/03.jpg",
+        "alt": "tidetrek-glacier — ảnh sản phẩm 3"
       }
     ],
     "code": "Glacier",
@@ -1427,8 +1487,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "4.200.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1462,14 +1524,19 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "4.200.000 VND"
   },
   {
     "id": "tidetrek-horizon",
     "slug": "tidetrek-horizon",
-    "name": "Tidetrek Horizon",
+    "name": "Horizon",
     "brand": "Tidetrek",
     "category": "SUP",
+    "categories": [
+      "SUP",
+      "THUYỀN CÂU"
+    ],
     "description": "Tidetrek Horizon là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế vải để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "overview": "Tidetrek Horizon là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế vải để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "usage": [
@@ -1507,8 +1574,28 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Horizon — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-horizon/01.jpg",
+        "alt": "tidetrek-horizon — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-horizon/02.jpg",
+        "alt": "tidetrek-horizon — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-horizon/03.jpg",
+        "alt": "tidetrek-horizon — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-horizon/04.jpg",
+        "alt": "tidetrek-horizon — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-horizon/05.jpg",
+        "alt": "tidetrek-horizon — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-horizon/06.jpg",
+        "alt": "tidetrek-horizon — ảnh sản phẩm 6"
       }
     ],
     "code": "Horizon",
@@ -1524,8 +1611,11 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Ghế câu",
+          "Túi khô điện thoại"
+        ],
+        "price": "4.050.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1559,14 +1649,19 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "4.050.000 VND"
   },
   {
     "id": "tidetrek-neonflow",
     "slug": "tidetrek-neonflow",
-    "name": "Tidetrek Neonflow",
+    "name": "Neonflow",
     "brand": "Tidetrek",
     "category": "SUP",
+    "categories": [
+      "SUP",
+      "THUYỀN CÂU"
+    ],
     "description": "Tidetrek Neonflow là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế vải để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "overview": "Tidetrek Neonflow là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế vải để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "usage": [
@@ -1604,8 +1699,28 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Neonflow — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-neonflow/01.jpg",
+        "alt": "tidetrek-neonflow — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-neonflow/02.jpg",
+        "alt": "tidetrek-neonflow — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-neonflow/03.jpg",
+        "alt": "tidetrek-neonflow — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-neonflow/04.jpg",
+        "alt": "tidetrek-neonflow — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-neonflow/05.jpg",
+        "alt": "tidetrek-neonflow — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-neonflow/06.jpg",
+        "alt": "tidetrek-neonflow — ảnh sản phẩm 6"
       }
     ],
     "code": "Neonflow",
@@ -1621,8 +1736,11 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Ghế câu",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.800.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1656,12 +1774,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "3.800.000 VND"
   },
   {
     "id": "tidetrek-nexo",
     "slug": "tidetrek-nexo",
-    "name": "Tidetrek Nexo",
+    "name": "Nexo",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Nexo là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -1701,8 +1820,24 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Nexo — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-nexo/01.jpg",
+        "alt": "tidetrek-nexo — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-nexo/02.jpg",
+        "alt": "tidetrek-nexo — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-nexo/03.jpg",
+        "alt": "tidetrek-nexo — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-nexo/04.jpg",
+        "alt": "tidetrek-nexo — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-nexo/05.jpg",
+        "alt": "tidetrek-nexo — ảnh sản phẩm 5"
       }
     ],
     "code": "Tidetrek Nexo",
@@ -1718,8 +1853,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.650.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1753,14 +1890,19 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "3.650.000 VND"
   },
   {
     "id": "tidetrek-raven",
     "slug": "tidetrek-raven",
-    "name": "Tidetrek Raven",
+    "name": "Raven",
     "brand": "Tidetrek",
     "category": "SUP",
+    "categories": [
+      "SUP",
+      "THUYỀN CÂU"
+    ],
     "description": "Tidetrek Raven là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "overview": "Tidetrek Raven là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "usage": [
@@ -1799,8 +1941,20 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Raven — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-raven/01.jpg",
+        "alt": "tidetrek-raven — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-raven/02.jpg",
+        "alt": "tidetrek-raven — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-raven/03.jpg",
+        "alt": "tidetrek-raven — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-raven/04.jpg",
+        "alt": "tidetrek-raven — ảnh sản phẩm 4"
       }
     ],
     "code": "Raven",
@@ -1816,8 +1970,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "4.200.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1851,12 +2007,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "4.200.000 VND"
   },
   {
     "id": "tidetrek-storm-x",
     "slug": "tidetrek-storm-x",
-    "name": "Tidetrek Storm X",
+    "name": "Storm X",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Storm X là mẫu SUP touring dáng dài, phù hợp khách thích chèo xa, đi thẳng ổn định và cần khả năng giữ hướng tốt trên hồ, sông nước lặng hoặc bãi biển lặng. Thiết kế hướng đến cảm giác thể thao, chắc ván, dễ kiểm soát và phù hợp cả người mới lẫn khách đã có trải nghiệm SUP.",
@@ -1896,8 +2053,32 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Storm X — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-storm-x/01.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-x/02.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-x/03.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-x/04.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-x/05.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-x/06.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 6"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-x/07.jpg",
+        "alt": "tidetrek-storm-x — ảnh sản phẩm 7"
       }
     ],
     "code": "Storm X",
@@ -1913,8 +2094,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.400.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -1922,8 +2105,10 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
@@ -1948,12 +2133,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "3.150.000 VND"
   },
   {
     "id": "tidetrek-storm-y",
     "slug": "tidetrek-storm-y",
-    "name": "Tidetrek Storm Y",
+    "name": "Storm Y",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Storm Y là mẫu SUP touring dáng dài, phù hợp khách thích chèo xa, đi thẳng ổn định và cần khả năng giữ hướng tốt trên hồ, sông nước lặng hoặc bãi biển lặng. Thiết kế hướng đến cảm giác thể thao, chắc ván, dễ kiểm soát và phù hợp cả người mới lẫn khách đã có trải nghiệm SUP.",
@@ -1993,8 +2179,32 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Storm Y — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-storm-y/01.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-y/02.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-y/03.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-y/04.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-y/05.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-y/06.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 6"
+      },
+      {
+        "src": "/images/products/tidetrek-storm-y/07.jpg",
+        "alt": "tidetrek-storm-y — ảnh sản phẩm 7"
       }
     ],
     "code": "Storm Y",
@@ -2010,8 +2220,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.400.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2019,8 +2231,10 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
@@ -2045,12 +2259,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "3.150.000 VND"
   },
   {
     "id": "tidetrek-tide-flow",
     "slug": "tidetrek-tide-flow",
-    "name": "Tidetrek Tide Flow",
+    "name": "Tide Flow",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Tide Flow là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -2091,39 +2306,39 @@ export const products: Product[] = [
     "images": [
       {
         "src": "/images/products/tidetrek-tide-flow/01.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 1"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 1"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/02.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 2"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 2"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/03.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 3"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 3"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/04.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 4"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 4"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/05.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 5"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 5"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/06.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 6"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 6"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/07.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 7"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 7"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/08.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 8"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 8"
       },
       {
         "src": "/images/products/tidetrek-tide-flow/09.jpg",
-        "alt": "Tidetrek Tide Flow — ảnh sản phẩm 9"
+        "alt": "tidetrek-tide-flow — ảnh sản phẩm 9"
       }
     ],
     "code": "Tide Flow",
@@ -2139,8 +2354,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2148,15 +2365,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.750.000 VND"
       }
     ],
     "warranty": {
@@ -2174,12 +2394,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.750.000 VND"
   },
   {
     "id": "tidetrek-tropical-series-70a",
     "slug": "tidetrek-tropical-series-70a",
-    "name": "Tidetrek Tropical Series 70A",
+    "name": "Tropical Series 70A",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Tropical Series 70A là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -2265,8 +2486,11 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Ghế câu",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2274,15 +2498,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.750.000 VND"
       }
     ],
     "warranty": {
@@ -2300,12 +2527,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.750.000 VND"
   },
   {
     "id": "tidetrek-tropical-series-70b",
     "slug": "tidetrek-tropical-series-70b",
-    "name": "Tidetrek Tropical Series 70B",
+    "name": "Tropical Series 70B",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Tropical Series 70B là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -2395,8 +2623,11 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Ghế câu",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2404,15 +2635,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.750.000 VND"
       }
     ],
     "warranty": {
@@ -2430,12 +2664,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.750.000 VND"
   },
   {
     "id": "tidetrek-tropical-series-70c",
     "slug": "tidetrek-tropical-series-70c",
-    "name": "Tidetrek Tropical Series 70C",
+    "name": "Tropical Series 70C",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Tropical Series 70C là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -2525,8 +2760,11 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Ghế câu",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2534,15 +2772,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.750.000 VND"
       }
     ],
     "warranty": {
@@ -2560,12 +2801,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.750.000 VND"
   },
   {
     "id": "tidetrek-tropical-series-70d",
     "slug": "tidetrek-tropical-series-70d",
-    "name": "Tidetrek Tropical Series 70D",
+    "name": "Tropical Series 70D",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Tropical Series 70D là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -2647,8 +2889,11 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Ghế câu",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2656,15 +2901,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.750.000 VND"
       }
     ],
     "warranty": {
@@ -2682,14 +2930,19 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.750.000 VND"
   },
   {
     "id": "tidetrek-venom",
     "slug": "tidetrek-venom",
-    "name": "Tidetrek Venom",
+    "name": "Venom",
     "brand": "Tidetrek",
     "category": "SUP",
+    "categories": [
+      "SUP",
+      "THUYỀN CÂU"
+    ],
     "description": "Tidetrek Venom là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "overview": "Tidetrek Venom là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "usage": [
@@ -2728,8 +2981,36 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Venom — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-venom/01.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/02.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/03.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/04.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/05.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/06.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 6"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/07.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 7"
+      },
+      {
+        "src": "/images/products/tidetrek-venom/08.jpg",
+        "alt": "tidetrek-venom — ảnh sản phẩm 8"
       }
     ],
     "code": "Venom",
@@ -2745,8 +3026,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "4.200.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2780,12 +3063,13 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "4.200.000 VND"
   },
   {
     "id": "tidetrek-venus",
     "slug": "tidetrek-venus",
-    "name": "Tidetrek Venus",
+    "name": "Venus",
     "brand": "Tidetrek",
     "category": "SUP",
     "description": "Tidetrek Venus là mẫu SUP hơi của Tidetrek, phù hợp khách cần một chiếc ván dễ chơi, ổn định và có thiết kế nổi bật để dùng cá nhân, gia đình hoặc dịch vụ cho thuê. Sản phẩm phù hợp cho hoạt động chèo thư giãn, check-in, picnic ven hồ, du lịch biển hoặc trải nghiệm ngoài trời.",
@@ -2825,8 +3109,40 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Venus — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-venus/01.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/02.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/03.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/04.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/05.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/06.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 6"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/07.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 7"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/08.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 8"
+      },
+      {
+        "src": "/images/products/tidetrek-venus/09.jpg",
+        "alt": "tidetrek-venus — ảnh sản phẩm 9"
       }
     ],
     "code": "Venus",
@@ -2842,8 +3158,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.150.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2851,15 +3169,18 @@ export const products: Product[] = [
         "includes": [
           "01 ván SUP",
           "Mái chèo",
-          "1 vây"
-        ]
+          "1 vây",
+          "Túi khô điện thoại"
+        ],
+        "price": "3.000.000 VND"
       },
       {
         "name": "Bản không phụ kiện",
         "description": "Chỉ thân ván cho khách đã có sẵn phụ kiện.",
         "includes": [
           "01 thân ván SUP"
-        ]
+        ],
+        "price": "2.750.000 VND"
       }
     ],
     "warranty": {
@@ -2877,14 +3198,19 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "2.750.000 VND"
   },
   {
     "id": "tidetrek-vortex",
     "slug": "tidetrek-vortex",
-    "name": "Tidetrek Vortex",
+    "name": "Vortex",
     "brand": "Tidetrek",
     "category": "SUP",
+    "categories": [
+      "SUP",
+      "THUYỀN CÂU"
+    ],
     "description": "Tidetrek Vortex là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "overview": "Tidetrek Vortex là mẫu SUP hơi đa năng của Tidetrek, được trang bị ghế câu bơm hơi để người chơi ngồi chèo thoải mái hơn khi di chuyển xa. Sản phẩm phù hợp chèo touring nhẹ, picnic ven hồ và có thể dùng như SUP câu, đặc biệt là câu lure trên hồ hoặc sông nước lặng.",
     "usage": [
@@ -2923,8 +3249,36 @@ export const products: Product[] = [
     ],
     "images": [
       {
-        "src": "/images/products/product-placeholder.svg",
-        "alt": "Tidetrek Vortex — hình ảnh đang được cập nhật"
+        "src": "/images/products/tidetrek-vortex/01.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 1"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/02.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 2"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/03.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 3"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/04.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 4"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/05.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 5"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/06.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 6"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/07.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 7"
+      },
+      {
+        "src": "/images/products/tidetrek-vortex/08.jpg",
+        "alt": "tidetrek-vortex — ảnh sản phẩm 8"
       }
     ],
     "code": "Vortex",
@@ -2940,8 +3294,10 @@ export const products: Product[] = [
           "Mái chèo",
           "1 vây",
           "Dây leash",
-          "Bộ vá lưu động"
-        ]
+          "Bộ vá lưu động",
+          "Túi khô điện thoại"
+        ],
+        "price": "4.200.000 VND"
       },
       {
         "name": "Bản dịch vụ",
@@ -2975,7 +3331,8 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "4.200.000 VND"
   },
   {
     "id": "xe-ap-nuoc-delta-bike",
@@ -3036,7 +3393,9 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "17.500.000 VND",
+    "packages": []
   },
   {
     "id": "thuyen-cau-fb340",
@@ -3105,6 +3464,120 @@ export const products: Product[] = [
       ],
       "note": "Chính sách bảo hành chỉ áp dụng đối với các lỗi được xác định là lỗi kỹ thuật hoặc lỗi từ nhà sản xuất."
     },
-    "featured": false
+    "featured": false,
+    "startingPrice": "9.500.000 VND",
+    "packages": []
+  },
+  {
+    "id": "hubi-lion-wave",
+    "slug": "hubi-lion-wave",
+    "name": "Lion Wave",
+    "brand": "Hubi",
+    "category": "SUP",
+    "categories": [
+      "SUP"
+    ],
+    "description": "",
+    "images": [
+      {
+        "src": "/images/products/lion-wave/01.jpg",
+        "alt": "Lion Wave"
+      }
+    ],
+    "specs": {
+      "Kích thước": "350 x 81 x 15 cm",
+      "Tải trọng": "200 kg",
+      "Bảo hành": "06 tháng"
+    },
+    "startingPrice": "2.750.000 VND",
+    "packages": [
+      {
+        "name": "Bản đầy đủ",
+        "description": "Bộ phụ kiện đầy đủ.",
+        "includes": [
+          "01 ván SUP",
+          "Bơm tay",
+          "Balo",
+          "Mái chèo",
+          "1 vây",
+          "Dây leash",
+          "Bộ vá lưu động"
+        ],
+        "price": "3.150.000 VND"
+      },
+      {
+        "name": "Bản dịch vụ",
+        "description": "Không bán.",
+        "includes": [
+          "01 ván SUP",
+          "Mái chèo",
+          "1 vây"
+        ]
+      },
+      {
+        "name": "Bản không phụ kiện",
+        "description": "Chỉ thân ván SUP.",
+        "includes": [
+          "01 thân ván SUP"
+        ],
+        "price": "2.750.000 VND"
+      }
+    ]
+  },
+  {
+    "id": "hubi-graffiti",
+    "slug": "hubi-graffiti",
+    "name": "Graffiti",
+    "brand": "Hubi",
+    "category": "SUP",
+    "categories": [
+      "SUP"
+    ],
+    "description": "",
+    "images": [
+      {
+        "src": "/images/products/graffiti/01.jpg",
+        "alt": "Graffiti"
+      }
+    ],
+    "specs": {
+      "Kích thước": "10.6 ft x 33 in x 6 in",
+      "Tải trọng": "180 kg",
+      "Bảo hành": "06 tháng"
+    },
+    "startingPrice": "2.550.000 VND",
+    "packages": [
+      {
+        "name": "Bản đầy đủ",
+        "description": "Bộ phụ kiện đầy đủ.",
+        "includes": [
+          "01 ván SUP",
+          "Bơm tay",
+          "Balo",
+          "Mái chèo",
+          "1 vây",
+          "Dây leash",
+          "Bộ vá lưu động"
+        ],
+        "price": "2.950.000 VND"
+      },
+      {
+        "name": "Bản dịch vụ",
+        "description": "Không bán.",
+        "includes": [
+          "01 ván SUP",
+          "Mái chèo",
+          "1 vây"
+        ]
+      },
+      {
+        "name": "Bản không phụ kiện",
+        "description": "Chỉ thân ván SUP.",
+        "includes": [
+          "01 thân ván SUP"
+        ],
+        "price": "2.550.000 VND"
+      }
+    ]
   }
 ]

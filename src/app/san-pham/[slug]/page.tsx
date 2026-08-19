@@ -26,13 +26,23 @@ function WarrantyContent({ warranty }: { warranty: ProductWarranty }) {
 }
 
 function PackageTable({ packages }: { packages: ProductPackage[] }) {
-  const rows = ["Thân SUP", "Bơm tay", "Balo", "Mái chèo", "Fin / vây", "Dây leash", "Bộ sửa chữa", "Túi khô điện thoại"]
-  const packageFeatures: Record<string, string[]> = {
-    "Bản đầy đủ": rows,
-    "Bản dịch vụ": ["Thân SUP", "Mái chèo", "Fin / vây"],
-    "Bản không phụ kiện": ["Thân SUP"],
+  const rows = ["Thân SUP", "Bơm tay", "Balo", "Mái chèo", "Fin / vây", "Dây leash", "Bộ sửa chữa", "Túi khô điện thoại", "Ghế câu"]
+  const includes = (item: ProductPackage, row: string) => {
+    if (item.name === "Bản không phụ kiện") return row === "Thân SUP" && item.price !== undefined
+    if (item.name === "Bản dịch vụ" && row === "Bộ sửa chữa") return false
+    return item.includes.some((entry) => {
+    if (row === "Thân SUP") return entry.includes("ván SUP") || entry.includes("thân ván")
+    if (row === "Bơm tay") return entry === "Bơm tay"
+    if (row === "Balo") return entry === "Balo"
+    if (row === "Mái chèo") return entry === "Mái chèo"
+    if (row === "Fin / vây") return entry.includes("vây")
+    if (row === "Dây leash") return entry.toLowerCase().includes("leash")
+    if (row === "Bộ sửa chữa") return entry.includes("vá") || entry.includes("sửa chữa")
+    if (row === "Túi khô điện thoại") return entry.includes("Túi khô")
+    return entry.includes("Ghế câu")
+  })
   }
-  return <div className="overflow-x-auto"><table className="w-full table-fixed border-collapse text-left"><caption className="sr-only">So sánh cấu hình, giá và phụ kiện theo từng phiên bản</caption><thead><tr className="border-b border-[#1A585F]/25 text-xs uppercase leading-4 tracking-[.1em] text-[#698E93]"><th scope="col" className="w-[22%] py-2 pr-1 font-medium sm:w-40 sm:py-3 sm:pr-4"><span className="sr-only">Phụ kiện</span></th>{packages.map((item) => <th key={item.name} scope="col" className="break-words px-1 py-2 text-center font-medium sm:px-3 sm:py-3">{item.name}</th>)}</tr></thead><tbody><tr className="border-b border-[#1A585F]/15"><th scope="row" className="py-2 pr-1 text-sm font-medium text-[#5D6555] sm:py-3 sm:pr-4">Giá</th>{packages.map((item) => <td key={`${item.name}-price`} className="px-1 py-2 text-center text-sm italic text-[#B42318] sm:px-3 sm:py-3">{item.price}</td>)}</tr>{rows.map((row) => <tr key={row} className="border-b border-[#1A585F]/15 last:border-b-0"><th scope="row" className="break-words py-2 pr-1 text-sm font-medium leading-4 text-[#5D6555] sm:py-3 sm:pr-4">{row}</th>{packages.map((item) => <td key={`${item.name}-${row}`} className="px-1 py-2 text-center sm:px-3 sm:py-3">{packageFeatures[item.name]?.includes(row) && <Check className="mx-auto h-4 w-4 text-[#07676E] sm:h-5 sm:w-5" strokeWidth={1.8} aria-label={`${item.name} bao gồm ${row}`} />}</td>)}</tr>)}</tbody></table></div>
+  return <div className="overflow-x-auto"><table className="w-full table-fixed border-collapse text-left"><caption className="sr-only">So sánh cấu hình, giá và phụ kiện theo từng phiên bản</caption><thead><tr className="border-b border-[#1A585F]/25 text-xs uppercase leading-4 tracking-[.1em] text-[#698E93]"><th scope="col" className="w-[22%] py-2 pr-1 font-medium sm:w-40 sm:py-3 sm:pr-4"><span className="sr-only">Phụ kiện</span></th>{packages.map((item) => <th key={item.name} scope="col" className="break-words px-1 py-2 text-center font-medium sm:px-3 sm:py-3">{item.name}</th>)}</tr></thead><tbody><tr className="border-b border-[#1A585F]/15"><th scope="row" className="py-2 pr-1 text-sm font-medium text-[#5D6555] sm:py-3 sm:pr-4">Giá</th>{packages.map((item) => <td key={`${item.name}-price`} className={`px-1 py-2 text-center text-sm italic sm:px-3 sm:py-3 ${item.price ? "text-[#B42318]" : "text-[#698E93]"}`}>{item.price ?? "Không bán"}</td>)}</tr>{rows.map((row) => <tr key={row} className="border-b border-[#1A585F]/15 last:border-b-0"><th scope="row" className="break-words py-2 pr-1 text-sm font-medium leading-4 text-[#5D6555] sm:py-3 sm:pr-4">{row}</th>{packages.map((item) => <td key={`${item.name}-${row}`} className="px-1 py-2 text-center sm:px-3 sm:py-3">{item.price && includes(item, row) && <Check className="mx-auto h-4 w-4 text-[#07676E] sm:h-5 sm:w-5" strokeWidth={1.8} aria-label={`${item.name} bao gồm ${row}`} />}</td>)}</tr>)}</tbody></table></div>
 }
 
 export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -59,7 +69,7 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
 
     <PageContainer className="pb-10 pt-0 md:pb-20">
       <div className="border-t border-[#1A585F]/20">
-        <DetailDropdown title="Giới thiệu chung và mục đích sử dụng" open><p className="max-w-3xl text-base leading-8 text-[#5D6555]">{introduction}</p></DetailDropdown>
+        <DetailDropdown title="Giới thiệu chung" open><p className="max-w-3xl text-base leading-8 text-[#5D6555]">{introduction}</p></DetailDropdown>
         {packages.length > 0 && <DetailDropdown title="Cấu hình gói bán"><PackageTable packages={packages} /></DetailDropdown>}
         <DetailDropdown title="Khuyến cáo sử dụng"><BulletList items={warnings} /></DetailDropdown>
         {product.warranty && <DetailDropdown title="Chính sách bảo hành"><WarrantyContent warranty={product.warranty} /></DetailDropdown>}

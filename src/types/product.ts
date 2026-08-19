@@ -9,6 +9,7 @@ export type Product = {
   code?: string
   brand?: string
   category?: string
+  categories?: string[]
   collection?: string
   material?: string
   description?: string
