@@ -55,13 +55,15 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const introduction = [overview, ...usage].join(" ")
   const warnings = product.warnings ?? []
   const packages = product.packages ?? []
+  const pricedPackageCount = packages.filter((item) => item.price !== undefined).length
+  const startingPriceLabel = product.startingPrice ? `${pricedPackageCount > 1 ? "Từ " : ""}${product.startingPrice}` : undefined
   const displaySpecs = { ...specs }
 
   return <article className="bg-[#F7F1E8] text-[#2A2C2D]">
     <div className="md:mx-auto md:grid md:max-w-7xl md:grid-cols-[minmax(0,1.35fr)_minmax(20rem,.65fr)] md:items-center">
       <ProductImageCarousel images={product.images} productName={product.name} />
       <div className="px-6 pt-10 md:px-8 md:py-12 md:pb-0">
-        <header className="border-b border-[#1A585F]/20 pb-9"><h1 className="font-serif text-5xl font-medium leading-[.98] tracking-[-.04em] text-[#1A585F] md:text-6xl">{product.name}</h1>{product.material && <p className="mt-4 text-sm leading-6 text-[#5D6555] md:text-base">{product.material}</p>}{product.startingPrice && <p className="mt-5 font-serif text-2xl italic font-normal tracking-[-.02em] text-[#B42318] md:text-3xl">{product.startingPrice}</p>}</header>
+        <header className="border-b border-[#1A585F]/20 pb-9"><h1 className="font-serif text-5xl font-medium leading-[.98] tracking-[-.04em] text-[#1A585F] md:text-6xl">{product.name}</h1>{product.material && <p className="mt-4 text-sm leading-6 text-[#5D6555] md:text-base">{product.material}</p>}{startingPriceLabel && <p className="mt-5 font-serif text-2xl italic font-normal tracking-[-.02em] text-[#B42318] md:text-3xl">{startingPriceLabel}</p>}</header>
 
         <dl className="grid grid-cols-5 gap-2 border-b border-[#1A585F]/20 py-7 sm:gap-5 md:grid-cols-2 md:gap-6 md:py-9">{Object.entries(displaySpecs).map(([key, value]) => { const Icon = specIcons[key] ?? Ruler; return <div key={key} className="min-w-0 text-center md:text-left"><Icon className="mx-auto h-5 w-5 text-[#07676E] md:mx-0 md:h-6 md:w-6" strokeWidth={1.5} /><dt className="mt-3 break-words text-[0.5rem] uppercase leading-tight tracking-[.06em] text-[#698E93] sm:text-[0.65rem] sm:tracking-[.12em]">{key}</dt><dd className="mt-1 break-words font-serif text-[0.68rem] leading-tight text-[#1A585F] sm:text-base md:text-xl">{value}</dd></div> })}</dl>
       </div>
