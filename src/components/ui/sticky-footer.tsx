@@ -2,20 +2,20 @@
 
 import type React from "react"
 import { motion, useReducedMotion } from "motion/react"
-import { cn } from "@/lib/utils"
+import { HubiLogo } from "@/components/shared/hubi-logo"
 
 type AnimatedContainerProps = React.ComponentProps<typeof motion.div> & { delay?: number }
 
 function AnimatedContainer({ delay = 0.1, children, ...props }: AnimatedContainerProps) {
   const shouldReduceMotion = useReducedMotion()
-  return <motion.div initial={shouldReduceMotion ? false : { filter: "blur(4px)", translateY: -8, opacity: 0 }} whileInView={shouldReduceMotion ? undefined : { filter: "blur(0px)", translateY: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay, duration: 0.8 }} {...props}>{children}</motion.div>
+  return <motion.div initial={false} whileInView={shouldReduceMotion ? undefined : { filter: "blur(0px)", translateY: 0, opacity: 1 }} viewport={{ once: true }} transition={{ delay, duration: 0.8 }} {...props}>{children}</motion.div>
 }
 
 type FooterLink = { title: string; href: string }
 type FooterLinkGroup = { label: string; links: FooterLink[] }
 
 export function StickyFooter({ className, ...props }: React.ComponentProps<"footer">) {
-  return <footer className={cn("relative h-[720px] w-full", className)} style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }} {...props}><div className="fixed bottom-0 h-[720px] w-full"><div className="sticky top-[calc(100vh-720px)] h-full overflow-y-auto"><div className="relative flex size-full flex-col justify-between gap-5 border-t border-border px-4 py-8 md:px-12"><div aria-hidden="true" className="absolute inset-0 isolate z-0 overflow-hidden"><div className="absolute left-0 top-0 h-[80rem] w-[35rem] -translate-y-[21.875rem] -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,hsl(var(--foreground)/.06)_0,hsl(var(--foreground)/.02)_50%,hsl(var(--foreground)/.01)_80%)]" /><div className="absolute left-0 top-0 h-[80rem] w-[15rem] -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsl(var(--foreground)/.04)_0,hsl(var(--foreground)/.01)_80%,transparent_100%)] [translate:5%_-50%]" /></div><div className="relative z-10 mt-10 flex flex-col gap-8 md:flex-row xl:mt-0"><AnimatedContainer className="w-full max-w-sm space-y-4"><p className="text-2xl font-bold tracking-[-.04em]"><span className="text-brand">hubi</span> Việt Nam</p><p className="mt-8 text-sm text-muted-foreground md:mt-0">Mang những trải nghiệm thể thao dưới nước chất lượng đến gần hơn với người Việt.</p></AnimatedContainer>{footerLinkGroups.map((group, index) => <AnimatedContainer key={group.label} delay={0.1 + index * 0.1} className="w-full"><div className="mb-10 md:mb-0"><h3 className="text-sm uppercase">{group.label}</h3><ul className="mt-4 space-y-2 text-sm text-muted-foreground">{group.links.map((link) => <li key={link.title}><a href={link.href} className="inline-flex items-center transition-all duration-300 hover:text-foreground">{link.title}</a></li>)}</ul></div></AnimatedContainer>)}</div><div className="relative z-10 flex flex-col items-center justify-between gap-2 border-t border-border pt-2 text-sm text-muted-foreground md:flex-row"><p>© {new Date().getFullYear()} Hubi Việt Nam. Bảo lưu mọi quyền.</p><p>Trải nghiệm trên mặt nước</p></div></div></div></div></footer>
+  return <footer className={`relative overflow-hidden bg-[#1A585F] text-[#F7F1E8] ${className ?? ""}`} {...props}><div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14"><div className="grid grid-cols-2 gap-8 md:grid-cols-[1.4fr_1fr_1fr] md:gap-8"><AnimatedContainer className="col-span-2 max-w-sm space-y-4 md:col-span-1"><HubiLogo inverted /><p className="max-w-xs text-sm leading-6 text-[#B5C7CA]">Mang những trải nghiệm thể thao dưới nước chất lượng đến gần hơn với người Việt.</p><a href="/lien-he" className="inline-flex items-center border-b border-[#E0CCB3] pb-1 text-sm text-[#E0CCB3] transition-colors hover:text-[#F7F1E8]">Bắt đầu trò chuyện <span aria-hidden="true" className="ml-3">→</span></a></AnimatedContainer>{footerLinkGroups.map((group, index) => <AnimatedContainer key={group.label} delay={0.1 + index * 0.1}><h3 className="font-sans text-xs font-medium uppercase tracking-[0.18em] text-[#B5C7CA]">{group.label}</h3><ul className="mt-3 space-y-2 text-sm">{group.links.map((link) => <li key={link.title}><a href={link.href} className="transition-colors hover:text-[#E0CCB3]">{link.title}</a></li>)}</ul></AnimatedContainer>)}</div><div className="mt-10 flex flex-col gap-2 border-t border-[#B5C7CA]/25 pt-4 text-xs text-[#B5C7CA] md:mt-12 md:flex-row md:items-center md:justify-between"><p>© {new Date().getFullYear()} Hubi Việt Nam. Bảo lưu mọi quyền.</p><p>Trải nghiệm trên mặt nước</p></div></div></footer>
 }
 
 const footerLinkGroups: FooterLinkGroup[] = [

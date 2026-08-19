@@ -1,10 +1,24 @@
 import type { Metadata } from "next"
-import Link from "next/link"
+import Image from "next/image"
+import { ArrowUpRight, Facebook, QrCode } from "lucide-react"
 import { PageContainer } from "@/components/shared/page-container"
-import { SectionHeading } from "@/components/shared/section-heading"
+import { HubiLogo } from "@/components/shared/hubi-logo"
 
-export const metadata: Metadata = { title: "Liên hệ", description: "Kết nối với Hubi Việt Nam để tìm hiểu thêm về các sản phẩm thể thao dưới nước." }
+export const metadata: Metadata = { title: "Liên hệ", description: "Kết nối với Hubi Việt Nam qua Facebook hoặc Zalo." }
 
 export default function ContactPage() {
-  return <section className="bg-[hsl(var(--surface))] py-[var(--section-space)]"><PageContainer><div className="grid gap-12 md:grid-cols-[1.15fr_.85fr] md:items-end"><SectionHeading eyebrow="Kết nối cùng Hubi" title="Sẵn sàng cho trải nghiệm tiếp theo trên mặt nước?" description="Hãy tìm hiểu bộ sưu tập của Hubi Việt Nam và chọn sản phẩm phù hợp với hành trình của bạn." /><div className="rounded-[var(--radius-lg)] bg-foreground p-7 text-white md:p-9"><p className="text-sm uppercase tracking-[.18em] text-cyan-200">Bắt đầu từ đây</p><p className="mt-5 text-lg leading-8 text-white/80">Thông tin liên hệ trực tiếp sẽ được cập nhật cùng hệ thống kênh chính thức của Hubi Việt Nam.</p><Link href="/san-pham" className="mt-7 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-cyan-100">Xem sản phẩm</Link></div></div></PageContainer></section>
+  return <article className="bg-[#F7F1E8] text-[#2A2C2D]">
+    <section data-hero className="relative min-h-svh overflow-hidden bg-[#102735]">
+      <Image src="/images/contact/halong-contact-bg-v2.png" alt="Vịnh Hạ Long trong sương sớm" fill priority sizes="100vw" className="hidden object-cover md:block" />
+      <Image src="/images/contact/halong-contact-mobile-bg-v2.png" alt="Vịnh Hạ Long trong sương sớm" fill priority sizes="100vw" className="object-cover object-center md:hidden" />
+      <PageContainer className="relative flex min-h-svh items-center justify-center md:justify-start md:py-16">
+        <div className="w-full max-w-md bg-[#F7F1E8]/95 px-4 py-5 shadow-[0_18px_60px_rgba(5,28,38,.24)] backdrop-blur-[2px] sm:px-8 sm:py-10 md:px-10 md:py-12">
+          <div className="mb-4 md:hidden"><HubiLogo /></div>
+          <h1 className="font-serif text-4xl font-medium leading-[.96] tracking-[-.04em] text-[#1A585F] sm:text-5xl">Kết nối cùng Hubi</h1>
+          <a href="https://www.facebook.com/HUBIVIETNAM" target="_blank" rel="noreferrer" className="group mt-5 flex items-center justify-between border-y border-[#1A585F]/20 py-4 text-[#1A585F] transition-colors hover:border-[#07676E] hover:text-[#07676E] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#07676E] sm:mt-8 sm:py-5"><span className="flex items-center gap-3 sm:gap-4"><span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1A585F] text-[#F7F1E8] sm:h-10 sm:w-10"><Facebook className="h-4 w-4 sm:h-5 sm:w-5" fill="currentColor" strokeWidth={1.5} /></span><span><span className="block text-[0.65rem] uppercase tracking-[.14em] text-[#698E93] sm:text-xs sm:tracking-[.16em]">Hỗ trợ &amp; bán hàng</span><span className="mt-0.5 block font-serif text-xl sm:mt-1 sm:text-2xl">Nhắn Facebook</span></span></span><ArrowUpRight className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" strokeWidth={1.5} /></a>
+          <div className="mt-5 flex items-center gap-3 border-t border-[#1A585F]/15 pt-4 sm:mt-8 sm:gap-5 sm:pt-6"><div className="relative h-20 w-20 shrink-0 overflow-hidden bg-white p-1 sm:h-28 sm:w-28"><Image src="/images/contact/zalo-qr.png" alt="Mã QR Zalo của Hubi Việt Nam" fill sizes="112px" className="object-contain p-1" /></div><div><QrCode className="h-4 w-4 text-[#07676E] sm:h-5 sm:w-5" strokeWidth={1.5} /><p className="mt-1 font-serif text-lg text-[#1A585F] sm:mt-2 sm:text-xl">Quét để mở Zalo</p><p className="mt-0.5 text-xs leading-4 text-[#698E93] sm:mt-1 sm:text-sm sm:leading-5">Tư vấn nhanh từ đội ngũ Hubi.</p></div></div>
+        </div>
+      </PageContainer>
+    </section>
+  </article>
 }
