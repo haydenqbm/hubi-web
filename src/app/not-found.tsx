@@ -1,0 +1,6 @@
+import Link from "next/link"
+import { PageContainer } from "@/components/shared/page-container"
+
+export default function NotFound() {
+  return <main className="bg-hubi-cream text-hubi-deep-teal"><PageContainer className="flex min-h-[60vh] flex-col items-start justify-center py-20"><p className="text-xs uppercase tracking-[.2em] text-hubi-muted-teal">404</p><h1 className="mt-4 max-w-2xl font-serif text-5xl font-medium leading-[.96] tracking-[-.04em] sm:text-6xl">Trang này đã trôi khỏi dòng nước.</h1><p className="mt-6 max-w-lg text-base leading-7 text-hubi-sage">Nội dung bạn tìm không còn ở đây hoặc đường dẫn chưa đúng.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/san-pham" className="inline-flex min-h-11 items-center justify-center bg-hubi-teal px-5 py-3 text-sm font-medium text-hubi-cream focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-hubi-teal">Xem sản phẩm</Link><Link href="/lien-he" className="inline-flex min-h-11 items-center justify-center border border-hubi-deep-teal/30 px-5 py-3 text-sm font-medium text-hubi-deep-teal focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-hubi-teal">Liên hệ Hubi</Link></div></PageContainer></main>
+}

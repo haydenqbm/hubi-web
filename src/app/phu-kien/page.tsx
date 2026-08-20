@@ -3,10 +3,13 @@ import Image from "next/image"
 import Link from "next/link"
 import { PageContainer } from "@/components/shared/page-container"
 import { getAccessories, getAccessoryCategories } from "@/lib/content"
+import { absoluteUrl, defaultOgImage } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Phụ kiện",
   description: "Mái chèo, áo phao, bơm và phụ kiện thực tế từ Hubi Việt Nam.",
+  alternates: { canonical: "/phu-kien" },
+  openGraph: { title: "Phụ kiện | Hubi Việt Nam", description: "Mái chèo, áo phao, bơm và phụ kiện thực tế từ Hubi Việt Nam.", url: absoluteUrl("/phu-kien"), images: [{ url: defaultOgImage, alt: "Phụ kiện thể thao dưới nước Hubi Việt Nam" }] },
 }
 
 export default function AccessoriesPage() {

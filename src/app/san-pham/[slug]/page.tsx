@@ -7,13 +7,14 @@ import { DetailDropdown } from "@/components/ui/detail-dropdown"
 import { PackageDialog } from "@/components/ui/package-dialog"
 import { ProductImageCarousel } from "@/features/products/product-image-carousel"
 import { getProductBySlug, getProducts } from "@/lib/content"
+import { absoluteUrl, breadcrumbJsonLd, defaultOgImage, jsonLd } from "@/lib/seo"
 import type { ProductPackage, ProductWarranty } from "@/types/product"
 
 export function generateStaticParams() { return getProducts().map((product) => ({ slug: product.slug })) }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const product = getProductBySlug((await params).slug)
-  return product ? { title: product.name, description: product.description, openGraph: { title: product.name, description: product.description, images: product.images.map((image) => image.src) } } : {}
+  return product ? { title: product.name, description: product.description, alternates: { canonical: `/san-pham/${product.slug}` }, openGraph: { title: `${product.name} | Hubi Việt Nam`, description: product.description, url: absoluteUrl(`/san-pham/${product.slug}`), images: (product.images.length ? product.images : [{ src: defaultOgImage, alt: product.name }]).map((image) => ({ url: image.src, alt: image.alt })) } } : {}
 }
 
 const specIcons: Record<string, LucideIcon> = { "Kích thước": Ruler, "Tải trọng": Weight, "Bảo hành": ShieldCheck, "Freeship": Truck, "Chất liệu": Layers3, "Lõi": Grid3X3 }
@@ -62,8 +63,10 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const materialSpec = specs["Chất liệu"]
   const baseSpecs = Object.fromEntries(Object.entries(specs).filter(([key]) => key !== "Model" && key !== "Chất liệu"))
   const displaySpecs = materialSpec ? { ...baseSpecs, "Chất liệu": materialSpec.replace(/\s*&\s*lõi Drop-stitch/i, ""), "Lõi": /Drop-stitch/i.test(materialSpec) ? "Drop-stitch" : "—" } : baseSpecs
+  const breadcrumb = breadcrumbJsonLd([{ name: "Trang chủ", path: "/" }, { name: "Sản phẩm", path: "/san-pham" }, { name: product.name, path: `/san-pham/${product.slug}` }])
+  const productJsonLd = { "@context": "https://schema.org", "@type": "Product", name: product.name, description: product.description, image: product.images.map((image) => absoluteUrl(image.src)), url: absoluteUrl(`/san-pham/${product.slug}`), brand: product.brand ? { "@type": "Brand", name: product.brand } : undefined, category: product.category }
 
-  return <article className="bg-hubi-cream text-hubi-charcoal">
+  return <article className="bg-hubi-cream text-hubi-charcoal"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(productJsonLd) }} />
     <div className="md:mx-auto md:grid md:max-w-7xl md:grid-cols-[minmax(0,1.35fr)_minmax(20rem,.65fr)] md:items-start">
       <ProductImageCarousel images={product.images} productName={product.name} />
       <div className="px-6 pt-10 md:sticky md:top-20 md:px-8 md:py-12 md:pb-0">

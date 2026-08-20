@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import { PageContainer } from "@/components/shared/page-container"
 import { ProductImageCarousel } from "@/features/products/product-image-carousel"
 import { getAccessories, getAccessoryBySlug } from "@/lib/content"
+import { absoluteUrl, breadcrumbJsonLd, jsonLd } from "@/lib/seo"
 
 export function generateStaticParams() {
   return getAccessories().map((accessory) => ({ slug: accessory.slug }))
@@ -11,15 +12,16 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const accessory = getAccessoryBySlug((await params).slug)
-  return accessory ? { title: accessory.name } : {}
+  return accessory ? { title: accessory.name, description: accessory.description, alternates: { canonical: `/phu-kien/${accessory.slug}` }, openGraph: { title: `${accessory.name} | Hubi Việt Nam`, description: accessory.description, url: absoluteUrl(`/phu-kien/${accessory.slug}`), images: accessory.images.map((image) => ({ url: image.src, alt: image.alt })) } } : {}
 }
 
 export default async function AccessoryDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const accessory = getAccessoryBySlug((await params).slug)
   if (!accessory) notFound()
+  const breadcrumb = breadcrumbJsonLd([{ name: "Trang chủ", path: "/" }, { name: "Phụ kiện", path: "/phu-kien" }, { name: accessory.name, path: `/phu-kien/${accessory.slug}` }])
 
   return (
-    <main className="bg-hubi-cream text-hubi-deep-teal">
+    <main className="bg-hubi-cream text-hubi-deep-teal"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }} />
       <PageContainer className="py-8 md:py-16">
         <div className="relative mx-auto max-w-6xl overflow-hidden bg-hubi-sand shadow-[0_20px_60px_rgb(var(--hubi-deep-teal-rgb)/.16)]">
           <div className="pointer-events-none absolute -right-24 -top-28 h-72 w-72 rounded-full border border-hubi-deep-teal/15" />

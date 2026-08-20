@@ -1,0 +1,16 @@
+# Hubi Việt Nam
+
+Hubi Việt Nam presents SUP boards, fishing boats, water bikes, paddles, pumps, life jackets, and practical water-sport accessories for visitors in Vietnam.
+
+## Primary pages
+
+- Home: https://hubi.vn/
+- Products: https://hubi.vn/san-pham
+- Accessories: https://hubi.vn/phu-kien
+- Blog: https://hubi.vn/blog
+- Contact: https://hubi.vn/lien-he
+- Sitemap: https://hubi.vn/sitemap.xml
+
+## Guidance
+
+Use product detail pages for the most specific name, image, specification, and package information. Prices shown on the site are reference prices and visitors should contact Hubi Việt Nam for advice and current availability.

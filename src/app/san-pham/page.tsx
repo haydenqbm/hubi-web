@@ -3,11 +3,13 @@ import Image from "next/image"
 import { ScrollReveal } from "@/components/ui/scroll-reveal"
 import { FoldText } from "@/components/ui/react-bits/fold-text"
 import { ProductCatalog } from "@/features/products/product-catalog"
+import { absoluteUrl, defaultOgImage, jsonLd } from "@/lib/seo"
 
-export const metadata: Metadata = { title: "Sản phẩm", description: "Khám phá thuyền, SUP và phụ kiện Hubi Việt Nam." }
+export const metadata: Metadata = { title: "Sản phẩm", description: "Khám phá thuyền, SUP và phụ kiện Hubi Việt Nam.", alternates: { canonical: "/san-pham" }, openGraph: { title: "Sản phẩm | Hubi Việt Nam", description: "Khám phá thuyền, SUP và phụ kiện Hubi Việt Nam.", url: absoluteUrl("/san-pham"), images: [{ url: defaultOgImage, alt: "Trải nghiệm thể thao dưới nước cùng Hubi Việt Nam" }] } }
 
 export default function ProductsPage() {
-  return <>
+  const collectionJsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: "Sản phẩm Hubi Việt Nam", url: absoluteUrl("/san-pham"), isPartOf: { "@type": "WebSite", name: "Hubi Việt Nam", url: absoluteUrl("/") } }
+  return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(collectionJsonLd) }} />
     <section data-hero className="sticky top-0 z-0 relative isolate min-h-screen overflow-hidden bg-hubi-deep-water text-hubi-cream">
       <Image src="/images/hero/products-desktop.png" alt="Trải nghiệm thể thao dưới nước cùng Hubi Việt Nam" fill priority sizes="100vw" className="hidden object-cover object-bottom md:block" />
       <Image src="/images/hero/products-mobile.png" alt="Mặt nước lúc hoàng hôn" fill priority sizes="100vw" className="object-cover object-center -translate-y-[3%] scale-[1.06] md:hidden" />
