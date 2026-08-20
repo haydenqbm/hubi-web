@@ -9,6 +9,7 @@ if (!packageJson.browserslist) failures.push("package.json: missing browserslist
 if (!carousel.includes("onTouchStart") || !carousel.includes("onTouchMove") || !carousel.includes("onTouchEnd")) failures.push("depth carousel: missing touch fallback handlers")
 if (!carousel.includes("event.preventDefault()")) failures.push("depth carousel: horizontal touch does not claim the gesture")
 if (carousel.includes("cardWidth * 0.55")) failures.push("depth carousel: swipe threshold is too high")
+if (carousel.includes('event.pointerType !== "touch"')) failures.push("depth carousel: touch Pointer Events are being ignored")
 if (!packageDialog.includes("bg-hubi-teal")) failures.push("package dialog: pricing CTA is not visually prominent")
 
 if (failures.length) {
