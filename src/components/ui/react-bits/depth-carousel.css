@@ -1,0 +1,13 @@
+.depth-carousel { position: relative; width: 100%; height: 38rem; min-height: 34rem; display: flex; align-items: center; justify-content: center; overflow: hidden; perspective: var(--dc-perspective, 1400px); perspective-origin: 50% 50%; touch-action: pan-y; outline: none; user-select: none; }
+.depth-carousel__stage { position: absolute; inset: 0; transform-style: preserve-3d; }
+.depth-carousel__card { position: absolute; top: 50%; left: 50%; overflow: hidden; border: 1px solid rgb(var(--hubi-deep-teal-rgb) / .12); border-radius: 1.25rem; transform-origin: center; background: var(--hubi-cream); box-shadow: 0 30px 60px -20px rgb(var(--hubi-shadow-rgb) / .32), 0 8px 20px -10px rgb(var(--hubi-shadow-rgb) / .24); will-change: transform, opacity, filter; cursor: pointer; }
+.depth-carousel__arrow { position: absolute; top: 50%; z-index: 3000; display: inline-flex; width: 3.25rem; height: 3.25rem; align-items: center; justify-content: center; border: 1px solid rgb(var(--hubi-deep-teal-rgb) / .24); border-radius: 999px; background: var(--hubi-cream); color: var(--hubi-deep-teal); cursor: pointer; transform: translateY(-50%); transition: background .2s ease, color .2s ease, transform .2s ease; }
+.depth-carousel__arrow:hover { background: var(--hubi-deep-teal); color: var(--hubi-cream); }
+.depth-carousel__arrow:active { transform: translateY(-50%) scale(.94); }
+.depth-carousel__arrow--prev { left: 1rem; }
+.depth-carousel__arrow--next { right: 1rem; }
+.depth-carousel__dots { position: absolute; bottom: .5rem; left: 50%; z-index: 3000; display: flex; gap: .5rem; padding: .5rem .75rem; border-radius: 999px; background: rgb(var(--hubi-deep-teal-rgb) / .78); transform: translateX(-50%); }
+.depth-carousel__dot { width: .45rem; height: .45rem; padding: 0; border: 0; border-radius: 999px; background: rgb(var(--hubi-cream-rgb) / .45); cursor: pointer; transition: background .25s ease, opacity .25s ease; }
+.depth-carousel__dot.is-active { width: 1.25rem; background: var(--hubi-cream); }
+@media (max-width: 767px) { .depth-carousel { height: 36rem; min-height: 33rem; } .depth-carousel__arrow { display: none; } }
+@media (prefers-reduced-motion: reduce) { .depth-carousel__card, .depth-carousel__arrow, .depth-carousel__dot { transition: none; } }

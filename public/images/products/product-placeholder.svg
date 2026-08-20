@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
-  <title id="title">Hình ảnh sản phẩm đang được cập nhật</title>
-  <desc id="desc">Hình minh họa tối giản cho sản phẩm chưa có ảnh trong thư viện</desc>
-  <rect width="1200" height="900" fill="#e0ccb3"/>
-  <path d="M170 560c155-145 310-145 465 0s310 145 395 0" fill="none" stroke="#07676e" stroke-width="18" opacity=".65"/>
-  <path d="M245 470c100-70 210-70 310 0s210 70 310 0" fill="none" stroke="#1a585f" stroke-width="12" opacity=".4"/>
-  <text x="600" y="690" text-anchor="middle" fill="#1a585f" font-family="Georgia,serif" font-size="42">Hình ảnh đang được cập nhật</text>
-</svg>

@@ -1,8 +1,25 @@
 @import "tailwindcss";
 @import "../styles/tokens.css";
 @import "../styles/typography.css";
+@import "../components/ui/react-bits/fold-text.css";
 
 @theme inline {
+  --color-hubi-sand: var(--hubi-sand);
+  --color-hubi-cream: var(--hubi-cream);
+  --color-hubi-tan: var(--hubi-tan);
+  --color-hubi-tan-hover: var(--hubi-tan-hover);
+  --color-hubi-teal: var(--hubi-teal);
+  --color-hubi-deep-teal: var(--hubi-deep-teal);
+  --color-hubi-muted-teal: var(--hubi-muted-teal);
+  --color-hubi-blue-grey: var(--hubi-blue-grey);
+  --color-hubi-charcoal: var(--hubi-charcoal);
+  --color-hubi-sage: var(--hubi-sage);
+  --color-hubi-grey: var(--hubi-grey);
+  --color-hubi-deep-water: var(--hubi-deep-water);
+  --color-hubi-ink: var(--hubi-ink);
+  --color-hubi-card: var(--hubi-card);
+  --color-hubi-price: var(--hubi-price);
+  --color-hubi-danger: var(--hubi-danger);
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-brand: hsl(var(--brand));
@@ -14,6 +31,10 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
 button[aria-label="Ảnh trước"],
 button[aria-label="Ảnh tiếp theo"] {
   border-radius: 9999px;
@@ -22,8 +43,8 @@ button[aria-label="Ảnh tiếp theo"] {
 
 button[aria-label="Ảnh trước"]:hover,
 button[aria-label="Ảnh tiếp theo"]:hover {
-  background-color: #1A585F;
-  color: #F7F1E8;
+  background-color: var(--hubi-deep-teal);
+  color: var(--hubi-cream);
 }
 
 button[aria-label="Ảnh trước"]:hover { transform: translateX(-4px); }

@@ -39,6 +39,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Source-only media; runtime WebP derivatives are generated into public/hero-sequence.
-assets-source/hero/frames/

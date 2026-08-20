@@ -82,7 +82,7 @@ None.
 
 ## Media policy
 
-`assets-source/hero/frames/` is source/build material and is ignored by Git. Runtime WebP derivatives live under `public/hero-sequence/` and are generated with `pnpm hero:optimize`.
+Runtime imagery is kept under `public/images/` by surface and product slug. The product page uses its static hero assets directly; there is no source-image build pipeline.
 
 ## Accepted deviations
 

@@ -1488,7 +1488,9 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động",
-          "Túi khô điện thoại"
+          "Ghế câu",
+          "Túi khô điện thoại",
+          "Túi khô đựng đồ, dây đeo vai"
         ],
         "price": "4.200.000 VND"
       },
@@ -1971,7 +1973,9 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động",
-          "Túi khô điện thoại"
+          "Ghế câu",
+          "Túi khô điện thoại",
+          "Túi khô đựng đồ, dây đeo vai"
         ],
         "price": "4.200.000 VND"
       },
@@ -3027,7 +3031,9 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động",
-          "Túi khô điện thoại"
+          "Ghế câu",
+          "Túi khô điện thoại",
+          "Túi khô đựng đồ, dây đeo vai"
         ],
         "price": "4.200.000 VND"
       },
@@ -3295,7 +3301,9 @@ export const products: Product[] = [
           "1 vây",
           "Dây leash",
           "Bộ vá lưu động",
-          "Túi khô điện thoại"
+          "Ghế câu",
+          "Túi khô điện thoại",
+          "Túi khô đựng đồ, dây đeo vai"
         ],
         "price": "4.200.000 VND"
       },

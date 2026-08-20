@@ -1,4 +1,24 @@
 :root {
+  --hubi-sand: #F1E8D9;
+  --hubi-cream: #F7F1E8;
+  --hubi-tan: #E0CCB3;
+  --hubi-tan-hover: #D5BC99;
+  --hubi-teal: #07676E;
+  --hubi-deep-teal: #1A585F;
+  --hubi-muted-teal: #698E93;
+  --hubi-blue-grey: #B5C7CA;
+  --hubi-charcoal: #2A2C2D;
+  --hubi-sage: #5D6555;
+  --hubi-grey: #A6A7A1;
+  --hubi-deep-water: #062E35;
+  --hubi-ink: #102735;
+  --hubi-card: #EDF2EF;
+  --hubi-price: #B64040;
+  --hubi-danger: #B42318;
+  --hubi-overlay-rgb: 0 0 0;
+  --hubi-deep-teal-rgb: 26 88 95;
+  --hubi-cream-rgb: 247 241 232;
+  --hubi-shadow-rgb: 0 0 0;
   --background: 0 0% 100%;
   --foreground: 222 20% 10%;
   --surface: 210 20% 98%;
