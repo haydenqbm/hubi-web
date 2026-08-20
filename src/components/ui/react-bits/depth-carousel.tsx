@@ -33,7 +33,7 @@ export function DepthCarousel({ items, cardWidth = 360, cardHeight = 500, depth 
   const positionRef = useRef(0)
   const focusRef = useRef(0)
   const dragRef = useRef<{ x: number; start: number; moved: boolean; id: number } | null>(null)
-  const touchRef = useRef<{ x: number; start: number; moved: boolean } | null>(null)
+  const touchRef = useRef<{ x: number; y: number; start: number; moved: boolean } | null>(null)
   const tweenRef = useRef<gsap.core.Tween | null>(null)
   const reducedMotionRef = useRef(false)
   const [active, setActive] = useState(0)
@@ -82,10 +82,10 @@ export function DepthCarousel({ items, cardWidth = 360, cardHeight = 500, depth 
   }, [layout])
 
   const onPointerDown = (event: React.PointerEvent) => { if (event.pointerType !== "touch" && data.length > 1) dragRef.current = { x: event.clientX, start: positionRef.current, moved: false, id: event.pointerId } }
-  const onPointerMove = (event: React.PointerEvent) => { if (event.pointerType === "touch") return; const drag = dragRef.current; if (!drag) return; const distance = event.clientX - drag.x; if (Math.abs(distance) > 6) drag.moved = true; if (drag.moved) { rootRef.current?.setPointerCapture(drag.id); positionRef.current = drag.start - distance / Math.max(cardWidth * 0.55, 40); layout(positionRef.current) } }
+  const onPointerMove = (event: React.PointerEvent) => { if (event.pointerType === "touch") return; const drag = dragRef.current; if (!drag) return; const distance = event.clientX - drag.x; if (Math.abs(distance) > 6) drag.moved = true; if (drag.moved) { rootRef.current?.setPointerCapture(drag.id); positionRef.current = drag.start - distance / Math.max(cardWidth * 0.35, 40); layout(positionRef.current) } }
   const onPointerUp = (event?: React.PointerEvent) => { if (event?.pointerType === "touch") return; const drag = dragRef.current; dragRef.current = null; if (drag?.moved) goTo(Math.round(positionRef.current)) }
-  const onTouchStart = (event: React.TouchEvent) => { if (data.length > 1) touchRef.current = { x: event.touches[0].clientX, start: positionRef.current, moved: false } }
-  const onTouchMove = (event: React.TouchEvent) => { const touch = touchRef.current; if (!touch) return; const distance = event.touches[0].clientX - touch.x; if (Math.abs(distance) > 6) touch.moved = true; if (touch.moved) { positionRef.current = touch.start - distance / Math.max(cardWidth * 0.55, 40); layout(positionRef.current) } }
+  const onTouchStart = (event: React.TouchEvent) => { if (data.length > 1) touchRef.current = { x: event.touches[0].clientX, y: event.touches[0].clientY, start: positionRef.current, moved: false } }
+  const onTouchMove = (event: React.TouchEvent) => { const touch = touchRef.current; const point = event.touches[0]; if (!touch || !point) return; const distance = point.clientX - touch.x; const verticalDistance = point.clientY - touch.y; if (!touch.moved && Math.abs(distance) > 6 && Math.abs(distance) > Math.abs(verticalDistance)) touch.moved = true; if (touch.moved) { event.preventDefault(); positionRef.current = touch.start - distance / Math.max(cardWidth * 0.35, 40); layout(positionRef.current) } }
   const onTouchEnd = () => { const touch = touchRef.current; touchRef.current = null; if (touch?.moved) goTo(Math.round(positionRef.current)) }
 
   return <div ref={rootRef} className="depth-carousel" style={{ "--dc-perspective": `${perspective}px` } as React.CSSProperties} role="region" aria-roledescription="carousel" aria-label="Sản phẩm" tabIndex={0} onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp} onTouchStart={onTouchStart} onTouchMove={onTouchMove} onTouchEnd={onTouchEnd} onTouchCancel={onTouchEnd} onKeyDown={(event) => { if (event.key === "ArrowLeft") { event.preventDefault(); goTo(focusRef.current - 1) } if (event.key === "ArrowRight") { event.preventDefault(); goTo(focusRef.current + 1) } if (event.key === "Home") { event.preventDefault(); goTo(0) } if (event.key === "End") { event.preventDefault(); goTo(data.length - 1) } }}>
