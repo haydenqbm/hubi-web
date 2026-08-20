@@ -4,12 +4,12 @@ Hubi Việt Nam presents SUP boards, fishing boats, water bikes, paddles, pumps,
 
 ## Primary pages
 
-- Home: https://hubi.vn/
-- Products: https://hubi.vn/san-pham
-- Accessories: https://hubi.vn/phu-kien
-- Blog: https://hubi.vn/blog
-- Contact: https://hubi.vn/lien-he
-- Sitemap: https://hubi.vn/sitemap.xml
+- Home: https://hubi-web-eta.vercel.app/
+- Products: https://hubi-web-eta.vercel.app/san-pham
+- Accessories: https://hubi-web-eta.vercel.app/phu-kien
+- Blog: https://hubi-web-eta.vercel.app/blog
+- Contact: https://hubi-web-eta.vercel.app/lien-he
+- Sitemap: https://hubi-web-eta.vercel.app/sitemap.xml
 
 ## Guidance
 
