@@ -9,5 +9,5 @@
 .depth-carousel__dots { position: absolute; bottom: .5rem; left: 50%; z-index: 3000; display: flex; gap: .5rem; padding: .5rem .75rem; border-radius: 999px; background: rgb(var(--hubi-deep-teal-rgb) / .78); transform: translateX(-50%); }
 .depth-carousel__dot { width: .45rem; height: .45rem; padding: 0; border: 0; border-radius: 999px; background: rgb(var(--hubi-cream-rgb) / .45); cursor: pointer; transition: background .25s ease, opacity .25s ease; }
 .depth-carousel__dot.is-active { width: 1.25rem; background: var(--hubi-cream); }
-@media (max-width: 767px) { .depth-carousel { height: 36rem; min-height: 33rem; } .depth-carousel__arrow { display: none; } }
+@media (max-width: 767px) { .depth-carousel { height: 34rem; min-height: 31rem; } .depth-carousel__arrow { display: inline-flex; width: 2.75rem; height: 2.75rem; } .depth-carousel__arrow--prev { left: .5rem; } .depth-carousel__arrow--next { right: .5rem; } }
 @media (prefers-reduced-motion: reduce) { .depth-carousel__card, .depth-carousel__arrow, .depth-carousel__dot { transition: none; } }

@@ -41,7 +41,7 @@ export function DepthCarousel({ items, cardWidth = 360, cardHeight = 500, depth 
   const layout = useCallback((position: number) => {
     const root = rootRef.current
     if (!root || data.length === 0) return
-    const scale = root.clientWidth < 768 ? 1 : clamp(root.clientWidth / (cardWidth + spread * 2 + 48), 0.88, 1)
+    const scale = root.clientWidth < 768 ? clamp(root.clientWidth / 390, 0.78, 0.9) : clamp(root.clientWidth / (cardWidth + spread * 2 + 48), 0.88, 1)
     data.forEach((_, index) => {
       const card = cardRefs.current[index]
       if (!card) return
