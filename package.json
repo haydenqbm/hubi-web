@@ -2,6 +2,7 @@
   "name": "hubi-web-public",
   "version": "0.1.0",
   "private": true,
+  "browserslist": ["Android >= 7", "Chrome >= 80", "iOS >= 13", "last 2 versions", "not dead"],
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
