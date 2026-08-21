@@ -12,10 +12,11 @@ export type Category = { label: string; intro: string; brands: BrandSection[] }
 export type CategoryCardData = { label: string; title: string; description: string; image: string }
 
 const PRODUCT_IMAGE_VERSION = "2026-08-19-v4"
-const categoryOrder = ["SUP", "THUYỀN CÂU", "PHỤ KIỆN"]
+const categoryOrder = ["SUP", "THUYỀN CÂU", "XE ĐẠP NƯỚC", "PHỤ KIỆN"]
 const categoryIntros: Record<string, string> = {
   SUP: "Những thiết kế cân bằng cho những ngày muốn đi xa hơn trên mặt nước.",
   "THUYỀN CÂU": "Không gian ổn định cho những buổi đi xa và những khoảnh khắc thật yên.",
+  "XE ĐẠP NƯỚC": "Một cách mới để khám phá mặt nước cùng gia đình và bạn bè.",
   "PHỤ KIỆN": "Những chi tiết hoàn thiện trải nghiệm trên mặt nước.",
 }
 
@@ -48,5 +49,6 @@ export const categories: Category[] = categoryOrder.map((label) => {
 export const categoryCards: readonly CategoryCardData[] = [
   { label: "SUP", title: "SUP", description: "Cân bằng, linh hoạt và sẵn sàng lên đường.", image: "/images/categories/sup.png" },
   { label: "THUYỀN CÂU", title: "Thuyền câu", description: "Không gian ổn định cho những buổi đi xa.", image: "/images/categories/thuyen-cau.png" },
+  { label: "XE ĐẠP NƯỚC", title: "Xe đạp nước", description: "Một cách mới để khám phá mặt nước.", image: "/images/categories/xe-dap-nuoc.png" },
   { label: "PHỤ KIỆN", title: "Phụ kiện", description: "Những chi tiết hoàn thiện trải nghiệm trên mặt nước.", image: "/images/categories/phu-kien.png" },
 ]

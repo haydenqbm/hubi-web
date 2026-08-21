@@ -10,6 +10,7 @@ if (!carousel.includes("onTouchStart") || !carousel.includes("onTouchMove") || !
 if (!carousel.includes("event.preventDefault()")) failures.push("depth carousel: horizontal touch does not claim the gesture")
 if (carousel.includes("cardWidth * 0.55")) failures.push("depth carousel: swipe threshold is too high")
 if (carousel.includes('event.pointerType !== "touch"')) failures.push("depth carousel: touch Pointer Events are being ignored")
+if (/const onPointerDown = .*setPointerCapture/.test(carousel)) failures.push("depth carousel: pointer capture starts before a swipe is detected")
 if (!packageDialog.includes("bg-hubi-teal")) failures.push("package dialog: pricing CTA is not visually prominent")
 
 if (failures.length) {
