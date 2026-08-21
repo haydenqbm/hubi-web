@@ -1,4 +1,4 @@
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hubi-web-eta.vercel.app"
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://hubivietnam.com"
 export const defaultOgImage = "/images/hero/products-desktop.png"
 export const siteDescription = "Khám phá thuyền, SUP và phụ kiện cho những ngày muốn đi xa hơn trên mặt nước cùng Hubi Việt Nam."
 
